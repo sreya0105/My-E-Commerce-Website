@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Snowflakes -->
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎄 ShopMate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin:30px 0; color:#8b0000;">Our Festive Products</h1>
+
+    <section class="product-list">
+
+      <!-- Sneakers -->
+      <div class="product">
+        <img src="assets/product1.jpg" alt="Cool Sneakers">
+        <h3>Cool Sneakers</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Cool Sneakers', 49.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product15.jpg" alt="Holiday Backpack">
+        <h3>Holiday Backpack</h3>
+        <p>$34.99</p>
+        <button onclick="addToCart('Holiday Backpack', 34.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product14.jpg" alt="Santa Graphic T-Shirt">
+        <h3>Santa Graphic T-Shirt</h3>
+        <p>$20.99</p>
+        <button onclick="addToCart('Santa Graphic T-Shirt', 20.99)">Add to Cart</button>
+      </div>
+
+      <!-- T-Shirts -->
+      <div class="product">
+        <img src="assets/product3.jpg" alt="Casual T-Shirt">
+        <h3>Casual T-Shirt</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Casual T-Shirt', 19.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product13.jpg" alt="Christmas Print T-Shirt">
+        <h3>Christmas Print T-Shirt</h3>
+        <p>$22.99</p>
+        <button onclick="addToCart('Christmas Print T-Shirt', 22.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product16.jpg" alt="Holiday Backpack">
+        <h3>Holiday Backpack</h3>
+        <p>$44.99</p>
+        <button onclick="addToCart('Holiday Backpack', 44.99)">Add to Cart</button>
+      </div>
+
+      <!-- Backpacks -->
+      <div class="product">
+        <img src="assets/product2.jpg" alt="Stylish Backpack">
+        <h3>Stylish Backpack</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Stylish Backpack', 39.99)">Add to Cart</button>
+      </div>
+
+      <!-- Sweaters -->
+      <div class="product">
+        <img src="assets/product5.jpg" alt="Cozy Christmas Sweater">
+        <h3>Cozy Christmas Sweater</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart('Cozy Christmas Sweater', 29.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product19.jpg" alt=" Christmas Sweater">
+        <h3> Christmas Sweater</h3>
+        <p>$27.99</p>
+        <button onclick="addToCart(' Christmas Sweater', 27.99)">Add to Cart</button>
+      </div>
+
+      <!-- Mugs & Gift Sets -->
+      <div class="product">
+        <img src="assets/product6.jpg" alt="Holiday Mug Set">
+        <h3>Holiday Mug</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Holiday Mug Set', 19.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product17.jpg" alt="Gingerbread House Kit">
+        <h3>Gingerbread House Kit</h3>
+        <p>$14.99</p>
+        <button onclick="addToCart('Gingerbread House Kit', 14.99)">Add to Cart</button>
+       
+
+      </div>
+
+      <!-- Accessories -->
+      <div class="product">
+        <img src="assets/product18.jpg" alt="Festive Lights">
+        <h3>Festive Lights</h3>
+        <p>$12.99</p>
+        <button onclick="addToCart('Festive Lights', 12.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product11.jpg" alt="Red Festive Sneakers">
+        <h3>Red Festive Sneakers</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Red Festive Sneakers', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product12.jpg" alt="Green Winter Sneakers">
+        <h3>Green Winter Sneakers</h3>
+        <p>$42.99</p>
+        <button onclick="addToCart('Green Winter Sneakers', 42.99)">Add to Cart</button>
+      </div>
+
+      <!-- Decor -->
+      <div class="product">
+        <img src="assets/product7.jpg" alt="Christmas Socks">
+        <h3>Christmas Socks</h3>
+        <p>$14.99</p>
+        <button onclick="addToCart('Christmas Socks', 14.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="assets/product8.jpg" alt="Christmas Hat">
+        <h3>Christmas Hat</h3>
+        <p>$4.99</p>
+        <button onclick="addToCart('Christmas Hat', 4.99)">Add to Cart</button>
+      </div>
+
+      <!-- Add more sneakers, T-shirts, or backpacks -->
+      <div class="product">
+        <img src="assets/product20.jpg" alt="Christmas Tree">
+        <h3>Christmas Tree</h3>
+        <p>$35.99</p>
+        <button onclick="addToCart('Christmas Tree', 35.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="assets/product21.jpg" alt=" Christmas Decor">
+        <h3> Christmas Decor</h3>
+        <p>$16.99</p>
+        <button onclick="addToCart('Christmas Decor', 16.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="assets/product22.jpg" alt="Christmas Hamper">
+        <h3>Christmas Hamper</h3>
+        <p>$23.99</p>
+        <button onclick="addToCart('Christmas Hamper', 23.99)">Add to Cart</button>
+      </div>
+
+      <!-- Repeat more as needed -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ShopMate. Merry Christmas! 🎄</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

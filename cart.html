@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - ShopMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🎄 ShopMate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+    <h2 id="cart-total">Total: $0.00</h2>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Proceed to Payment</button>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopMate - Merry Christmas 🎄</p>
+  </footer>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function renderCart() {
+      const cartItems = document.getElementById('cart-items');
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = '<tr><td colspan="2">Your cart is empty 🎁</td></tr>';
+      } else {
+        cart.forEach(item => {
+          cartItems.innerHTML += `<tr><td>${item.name}</td><td>$${item.price.toFixed(2)}</td></tr>`;
+          total += item.price;
+        });
+      }
+
+      document.getElementById('cart-total').textContent = `Total: $${total.toFixed(2)}`;
+      document.getElementById('cart-count').textContent = cart.length;
+    }
+
+    function clearCart() {
+      localStorage.removeItem('cart');
+      cart = [];
+      renderCart();
+    }
+
+    function checkout() {
+      alert('Proceeding to payment (dummy checkout)');
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>

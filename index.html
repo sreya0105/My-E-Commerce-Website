@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMate - Christmas Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Snowflakes -->
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+  <div class="snowflake">❄️</div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎄 ShopMate</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="About Us.html">About</a> 
+      <a href="cart.html">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  
+
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to ShopMate!</h1>
+    <p>Your one-stop festive shop for Christmas sneakers, T-shirts, backpacks, and more!</p>
+    <a href="products.html" class="hero-btn">Shop Now</a>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>🚚 Free Shipping</h3>
+      <p>On all orders over $50 this holiday season.</p>
+    </div>
+    <div class="feature">
+      <h3>💳 Secure Payment</h3>
+      <p>Safe and easy checkout for all festive shopping.</p>
+    </div>
+    <div class="feature">
+      <h3>🎁 Gift Wrapping</h3>
+      <p>Make your gifts extra special with festive wrapping.</p>
+    </div>
+    <div class="feature">
+      <h3>⏰ Fast Delivery</h3>
+      <p>Guaranteed delivery before Christmas.</p>
+    </div>
+    <div class="feature">
+      <h3>🎄 Festive Discounts</h3>
+      <p>Special holiday deals you can’t miss.</p>
+    </div>
+  </section>
+
+  <!-- Search Bar -->
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="product-list">
+    <div class="product">
+      <img src="assets/product1.jpg" alt="Cool Sneakers">
+      <h3>Cool Sneakers</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Cool Sneakers', 49.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product2.jpg" alt="Stylish Backpack">
+      <h3>Stylish Backpack</h3>
+      <p>$39.99</p>
+      <button onclick="addToCart('Stylish Backpack', 39.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product3.jpg" alt="Casual T-Shirt">
+      <h3>Casual T-Shirt</h3>
+      <p>$19.99</p>
+      <button onclick="addToCart('Casual T-Shirt', 19.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product4.jpg" alt="Trendy Sunglasses">
+      <h3>Trendy Sunglasses</h3>
+      <p>$29.99</p>
+      <button onclick="addToCart('Trendy Sunglasses', 29.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product5.jpg" alt="Winter Jacket">
+      <h3>Winter Jacket</h3>
+      <p>$79.99</p>
+      <button onclick="addToCart('Winter Jacket', 79.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product6.jpg" alt="Christmas Mug">
+      <h3>Christmas Mug</h3>
+      <p>$12.99</p>
+      <button onclick="addToCart('Christmas Mug', 12.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product7.jpg" alt="Festive Socks">
+      <h3>Festive Socks</h3>
+      <p>$9.99</p>
+      <button onclick="addToCart('Festive Socks', 9.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="assets/product8.jpg" alt="Holiday Hat">
+      <h3>Holiday Hat</h3>
+      <p>$14.99</p>
+      <button onclick="addToCart('Holiday Hat', 14.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopMate. Merry Christmas! 🎄</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
